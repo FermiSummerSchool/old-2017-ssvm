@@ -3,8 +3,8 @@
 --------------------------
 
 ### Installation Instructions ###
-1) Install Vagrant, available from https://www.vagrantup.com/downloads.html
-2) Install VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
-3) clone this repository
+1) Install VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
+2) Install Vagrant, available from https://www.vagrantup.com/downloads.html
+3) clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
 4) `./preparevm.sh`
 5) `vagrant ssh`
