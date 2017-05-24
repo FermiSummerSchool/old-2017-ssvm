@@ -8,8 +8,13 @@ command -v vagrant >/dev/null 2>&1 || {
 }
 
 echo >&2 "Fetching Summer School Virtual Machine (VM)."
-wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/fermi.17.01.box
-wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/gll_iem_v06.fits
+if [[ ! -f fermi.17.0.1.box ]]; then
+  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/fermi.17.01.box
+fi
+echo >&2 "Fetching galactic diffuse file."
+if [[ ! -f gll_iem_v06.fits ]]; then
+  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/gll_iem_v06.fits
+fi
 
 vagrant box remove fermi-box
 vagrant box add fermi-box fermi.17.01.box
