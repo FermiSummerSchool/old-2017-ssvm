@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 command -v VBoxManage >/dev/null 2>&1 || {
   echo >&2 "I require VirtualBox but it's not installed.  Get it at https://www.virtualbox.org/wiki/Downloads"; exit 1;
@@ -8,16 +8,24 @@ command -v vagrant >/dev/null 2>&1 || {
 }
 
 echo >&2 "Fetching Summer School Virtual Machine (VM)."
-if [[ ! -f fermi.17.0.1.box ]]; then
-  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/fermi.17.01.box
+vmfile=./fermi.17.01.box
+if [ ! -f "$vmfile" ]; then
+  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/"$vmfile"
 fi
 echo >&2 "Fetching galactic diffuse file."
-if [[ ! -f gll_iem_v06.fits ]]; then
-  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/gll_iem_v06.fits
+file=./gll_iem_v06.fits
+if [ ! -f "$file" ]; then
+  wget ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/"$file"
+fi
+echo >&2 "Fetching isotropic diffuse file."
+file=./iso_P8R2_SOURCE_V6_v06.txt
+if [ ! -f "$file" ]; then
+  wget https://fermi.gsfc.nasa.gov/ssc/data/analysis/software/aux/"$file"
 fi
 
 vagrant box remove fermi-box
-vagrant box add fermi-box fermi.17.01.box
+vagrant box add fermi-box "$vmfile"
 vagrant up
 
 exit 0;
+
