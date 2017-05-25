@@ -3,8 +3,11 @@
 
 ### Installation Instructions ###
 * clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
-* Install VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
-* Install Vagrant, available from https://www.vagrantup.com/downloads.html
+* Install/Upgrade VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
+* Install/Upgrade Vagrant, available from https://www.vagrantup.com/downloads.html
+* Make a directory where you want the VM to live and cd into that box. For example: 
+  * `mkdir fermi-box`
+  * `cd fermi-box`
 * `./preparevm.sh`
 * Now you can use it
     * `vagrant ssh` will log you into the VM
@@ -12,6 +15,7 @@
     * All programs should be setup and ready to go.  Give them a try.
     * If you want to log out, just type `exit`.
     * If you want to stop the VM, type `vagrant halt`
+    * If you want to start the VM, type `vagrant up`
     * If you want to run jupyter run from within the VM:
         * `jupyter notebook --no-browser --ip=0.0.0.0 &`
         * and then open a browser on your host and point to the URL given in the terminal
