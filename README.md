@@ -5,9 +5,6 @@
 * clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
 * Install/Upgrade VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
 * Install/Upgrade Vagrant, available from https://www.vagrantup.com/downloads.html
-* Make a directory where you want the VM to live and cd into that box. For example: 
-  * `mkdir fermi-box`
-  * `cd fermi-box`
 * `./preparevm.sh`
 * Now you can use it
     * `vagrant ssh` will log you into the VM
