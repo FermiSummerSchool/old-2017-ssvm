@@ -16,3 +16,5 @@
     * If you want to run jupyter run from within the VM:
         * `jupyter notebook --no-browser --ip=0.0.0.0 &`
         * and then open a browser on your host and point to the URL given in the terminal
+
+If you have any trouble, our staff in Lewes will be able to help in person.
