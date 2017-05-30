@@ -1,7 +1,7 @@
 # Vagrant Virtual Machine #
 ## Fermi Summer School 2017 ##
 
-### Installation Instructions For Mac/Unix Systems###
+### Installation Instructions For Mac/Unix Systems ###
 * Install/Upgrade VirtualBox, available from [here](https://www.virtualbox.org/wiki/Downloads)
 * Install/Upgrade Vagrant, available from [here](https://www.vagrantup.com/downloads.html)
 * If using Scientific Linux follow [this link](http://devopspy.com/devops/installing-vagrant-on-centos-7/)
