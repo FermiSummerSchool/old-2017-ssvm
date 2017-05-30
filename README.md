@@ -6,7 +6,7 @@
 * Install/Upgrade Vagrant, available from [here](https://www.vagrantup.com/downloads.html)
 * If using Scientific Linux follow [this link](http://devopspy.com/devops/installing-vagrant-on-centos-7/)
 * clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
-* `cd ssmv`
+* `cd ssvm`
 * Move or Copy the `fermi-box.17.01` file into this `ssvm` directory
 * Move or Copy the `gll_iem_v06.fits` file into this `ssvm` directory
 * Move or Copy the `iso_P8R2_SOURCE_V6_v06.txt` file into this `ssvm` directory
