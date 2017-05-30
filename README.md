@@ -2,8 +2,9 @@
 ## Fermi Summer School 2017 ##
 
 ### Installation Instructions ###
-* Install/Upgrade VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
-* Install/Upgrade Vagrant, available from https://www.vagrantup.com/downloads.html
+* Install/Upgrade VirtualBox, available from [here](https://www.virtualbox.org/wiki/Downloads)
+* Install/Upgrade Vagrant, available from [here](https://www.vagrantup.com/downloads.html)
+* If using Scientific Linux follow [this link](http://devopspy.com/devops/installing-vagrant-on-centos-7/)
 * clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
 * `cd ssmv`
 * Move or Copy the `fermi-box.17.01` file into this `ssvm` directory
