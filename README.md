@@ -2,9 +2,13 @@
 ## Fermi Summer School 2017 ##
 
 ### Installation Instructions ###
-* clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
 * Install/Upgrade VirtualBox, available from https://www.virtualbox.org/wiki/Downloads
 * Install/Upgrade Vagrant, available from https://www.vagrantup.com/downloads.html
+* clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
+* `cd ssmv`
+* Move or Copy the `fermi-box.17.01` file into this `ssvm` directory
+* Move or Copy the `gll_iem_v06.fits` file into this `ssvm` directory
+* Move or Copy the `iso_P8R2_SOURCE_V6_v06.txt` file into this `ssvm` directory
 * `./preparevm.sh`
 * Now you can use it!
     * `vagrant ssh` will log you into the VM
