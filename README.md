@@ -9,7 +9,7 @@
 * Now you can use it!
     * `vagrant ssh` will log you into the VM
     * In the VM the directory `/vagrant` is shared with wherever you're running the VM (in this example, the directory 'ssvm'.  You can put things there that you want to see in both the VM and your host machine.
-        * Please note the differecne between `/vagrant` and `/home/vagrant`. The former is the shared directory.
+        * Please note the difference between `/vagrant` and `/home/vagrant`. The former is the shared directory.
     * All programs should be setup and ready to go.  Give them a try.
     * If you want to log out, just type `exit`.
     * If you want to stop the VM, type `vagrant halt`
