@@ -23,4 +23,7 @@
         * `jupyter notebook --no-browser --ip=0.0.0.0 &`
         * and then open a browser on your host and point to the URL given in the terminal
 
-If you have any trouble, our staff in Lewes will be able to help in person.
+### XSPEC patch instructions ###
+To patch the vagrant VM's version of XSPEC in the heasarc ftools log into the 
+VM with `vagrant ssh` and execute the patch script with the command `/vagrant/xspec_patch_0.sh`.
+This will install the unix 'patch' utility on the VM, retrieve the 351MB binary tarball of the new tool, and update the VM environment.
