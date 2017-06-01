@@ -25,7 +25,8 @@
 
 ### XSPEC patch instructions ###
 This will apply a patch to the vagrant VM's version of XSPEC in the heasarc ftools.
+It install the unix 'patch' utility on the VM, retrieve the 351MB binary 
+tarball of the new tool, and update the VM environment.
 * On your host machine in the 'ssvm' directory `git fetch && git pull`. This will update the git repository.
 * Log into the VM with `vagrant ssh`.
 * Execute the patch script with the command `/vagrant/xspec_patch_0.sh`.
-This will install the unix 'patch' utility on the VM, retrieve the 351MB binary tarball of the new tool, and update the VM environment.
