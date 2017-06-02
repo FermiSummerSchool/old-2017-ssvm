@@ -29,4 +29,5 @@ It install the unix 'patch' utility on the VM, retrieve the 351MB binary
 tarball of the new tool, and update the VM environment.
 * On your host machine in the 'ssvm' directory `git fetch && git pull`. This will update the git repository.
 * Log into the VM with `vagrant ssh`.
-* Execute the patch script with the command `/vagrant/xspec_patch_0.sh`.
+* Execute the patch script with the command `/vagrant/xspec_patch_0.sh && . $HEADAS/headas-init.sh`.
+    * It's possible you may need to log out and back in before your environment is properly set
