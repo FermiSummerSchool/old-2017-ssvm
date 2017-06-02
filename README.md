@@ -31,3 +31,11 @@ tarball of the new tool, and update the VM environment.
 * Log into the VM with `vagrant ssh`.
 * Execute the patch script with the command `/vagrant/xspec_patch_0.sh && . $HEADAS/headas-init.sh`.
     * It's possible you may need to log out and back in before your environment is properly set
+
+### Tempo2/PGPLOT patch instructions ###
+This will apply a patch to the vagrant VM's version of Tempo2 and PGPLOT to include additional plugins.
+It install retrieve the 108MB binary tarball of the new tool, and apply it to the VM.
+* On your host machine in the 'ssvm' directory `git fetch && git pull`. This will update the git repository.
+* Log into the VM with `vagrant ssh`.
+* Execute the patch script with the command `cd /vagrant && ./tempo2_patch_0.sh`.
+* Run pgplot's xwindow server with `$PGPLOT_DIR/pgxwin_server &`.
