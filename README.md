@@ -34,8 +34,8 @@ tarball of the new tool, and update the VM environment.
 
 ### Tempo2/PGPLOT patch instructions ###
 This will apply a patch to the vagrant VM's version of Tempo2 and PGPLOT to include additional plugins.
-It retrieve the 108MB binary tarball of the new tool, and apply it to the VM.
+It will retrieve the 108MB binary tarball of the new tool, and apply it to the VM.
 * On your host machine in the 'ssvm' directory `git fetch && git pull`. This will update the git repository.
 * Log into the VM with `vagrant ssh`.
 * Execute the patch script with the command `cd /vagrant && ./tempo2_patch_0.sh`.
-* Run pgplot's xwindow server with `$PGPLOT_DIR/pgxwin_server &`.
+* Run pgplot's X11 window server with `$PGPLOT_DIR/pgxwin_server &`.
