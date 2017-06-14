@@ -1,0 +1,58 @@
+Problem:
+
+Windows: When attempting to run gtburst (or any X11 window dependant application) "Cannot connect to Display: " error appears
+
+
+Solution:
+
+For some reason on Windows OS machines X11 forwarding doesn't work properly through the Vagrant SSH client. Therefore, the student needs to use puTTY as their primary ssh client if they wish to utilize gui tools/features.
+
+    1. Download and start Xming (https://sourceforge.net/projects/xming/)
+    2. Download and start puTTY (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+    3. In the 'session' window of putty input the target as 'vagrant@127.0.0.1' port '2222'
+    4. Scroll down in the left hand window and expand the ssh tab
+    5. Check the 'Enable X11 Forwarding' box and set display as 'localhost:0'
+    6. Return to the 'session' tab and save the profile by inputting a name and hitting save so that it can be reloaded next connection
+    7. Click 'open' and input password 'vagrant' when prompted.
+    8. Test X11 forwarding by calling gtburst/xclock/etc.
+
+X11 window forwarding should now be working.
+
+
+Problem:
+
+When attempting to 'Vagrant Up' machine gets into a connection refused/retry loop or other generic connection failed error.
+
+
+Solution:
+
+Most of the time this is due to Virtualbox not initializing the virtual network adapter for the virtual machine. This can be fixed by manually connecting the adapter.
+
+    1. 'Vagrant halt' the machine to ensure the VM is shut down
+    2. Open the Virtualbox application
+    3. Click the 'ssvm_*' virtual machine and open settings
+    4. Open the 'Network' tab and ensure that the 'Cable Connected' box is checked
+    5. Click the 'Port Forwarding' button and verify the following rules are in place:
+
+      ssh   TCP   127.0.0.1   2222   20
+	  tcp8888 TCP               8888   8888
+
+    6. Hit 'OK' to save the settings and exit the settings window
+    7. 'Vagrant up' the machine
+
+Although you may see a couple of 'connection refused. retrying...' messages, after a few seconds the keys should update and the machine should come up.
+
+Worst case scenario the student should be able to work within the virtual machine by launching it manually from Virtualbox and working within the Virtualbox gui window. They will need to log in with the credentials
+
+Username: vagrant
+Password: vagrant
+
+
+Problem:
+
+The shared directory doesn't appear populated in the VM
+
+
+Solution:
+
+Most likely the vm was launched in a different directory from the ssvm directory. Launching from */ssvm should solve the problem.
