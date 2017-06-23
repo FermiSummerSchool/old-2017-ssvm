@@ -7,10 +7,7 @@
 * If using Scientific Linux follow [this link](http://devopspy.com/devops/installing-vagrant-on-centos-7/)
 * clone this repository: `git clone https://github.com/FermiSummerSchool/ssvm.git`
 * `cd ssvm`
-* Move or Copy the `fermi-box.17.01` file into this `ssvm` directory
-* Move or Copy the `gll_iem_v06.fits` file into this `ssvm` directory
-* Move or Copy the `iso_P8R2_SOURCE_V6_v06.txt` file into this `ssvm` directory
-* `./preparevm.sh`
+* `./preparevm.sh` Note, on a unix system this script will check for important software and download the necessary files, such as the vagrant box file.
 * Now you can use it!
     * `vagrant ssh` will log you into the VM
     * In the VM the directory `/vagrant` is shared with wherever you're running the VM (in this example, the directory 'ssvm'.  You can put things there that you want to see in both the VM and your host machine.
