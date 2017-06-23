@@ -8,9 +8,8 @@ command -v vagrant >/dev/null 2>&1 || {
 }
 
 dlget=wget
-command -v $dlget >/dev/null 2>&1 || { $dlget=curl; }
 command -v $dlget >/dev/null 2>&1 || {
-  echo >&2 "I need a way to download files, but I cannot find wget or curl. Please download one."
+  echo >&2 "I need wget to download files, but I cannot find it. Please download wget."
 }
 
 echo >&2 "Fetching Summer School Virtual Machine (VM)."
