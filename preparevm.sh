@@ -28,9 +28,12 @@ if [ ! -f "$file" ]; then
   $dlget https://fermi.gsfc.nasa.gov/ssc/data/analysis/software/aux/"$file"
 fi
 
+command -v vagrant status default >/dev/null 2>&1 || {
+  echo >&2 "A default vm already exists in this directory. Please destroy it with vagrant destroy and run preparevm.sh again."; exit 1;
+}
 vagrant box remove fermi-box
 vagrant box add fermi-box "$vmfile"
-vagrant up
+vagrant up fermi-box --destroy-on-error
 
 exit 0;
 
