@@ -1,7 +1,7 @@
 # Vagrant Virtual Machine #
 ## Fermi Summer School 2017 ##
 
-The Virtual Machine 'Box File' will be downloaded an prepared automatically by
+The Virtual Machine 'Box File' will be downloaded and prepared automatically by
 the `preparevm.sh` script. The files are also available from
 `ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017`
 if you need to download them seperately for whatever reason.
