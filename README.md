@@ -5,7 +5,7 @@
 
 The Virtual Machine 'Box File' will be downloaded an prepared automatically by
 the `preparevm.sh` script. The files are also available from
-[here](ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017)
+`ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017`
 if you need to download them seperately for whatever reason.
 
 * Install/Upgrade VirtualBox, available from [here](https://www.virtualbox.org/wiki/Downloads)
