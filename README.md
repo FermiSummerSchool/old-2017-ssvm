@@ -2,6 +2,12 @@
 ## Fermi Summer School 2017 ##
 
 ### Installation Instructions For Mac/Unix Systems ###
+
+The Virtual Machine 'Box File' will be downloaded an prepared automatically by
+the `preparevm.sh` script. The files are also available from
+[here](ftp://heasarc.nasa.gov/fermi/software/Summer_School_2017/)
+if you need to download them seperately for whatever reason.
+
 * Install/Upgrade VirtualBox, available from [here](https://www.virtualbox.org/wiki/Downloads)
 * Install/Upgrade Vagrant, available from [here](https://www.vagrantup.com/downloads.html)
 * If using Scientific Linux follow [this link](http://devopspy.com/devops/installing-vagrant-on-centos-7/)
